@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #141414;
+}
+
+.container{
+   
+    height: 550px;
+    width: 400px;
+    background-color: #1F1F1F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0px;
+    border-radius: 10px;
+}
+
+.profile{
+    
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.profile img{
+    height:90px ;
+    border-radius:50% ;
+}
+ 
+.profile h1{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+.profile h3{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #79921C;
+}
+.profile p{
+    color: #B7B7B7;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.sociamedia{
+    
+    height: 60%;
+    width: 100%;
+}
+
+.sociamedia ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    /* width: 100%; */
+}
+
+.sociamedia ul li{
+    
+    width: 80%;
+    text-align: center;
+    padding: 15px 0px;
+    background-color: #333333;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;cursor: pointer;
+}
+
+
+.sociamedia ul li:hover{
+    background-color: #C4F82A;
+    color: #333333;
+}
+
+.attribution{
+    /* border: 2px solid; */
+    margin-top: 15px;
+    padding: 5px 15px;
+    box-shadow: -5px -5px 10px 1px #333333 ;
+    color: white;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: #C4F82A;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:380px) {
+    .container{
+   
+        height: 500px;
+        width: 290px;
+        padding: 15px 0px;
+    }
+    .profile h1{
+        font-size: 18px;
+    }
+
+    .profile h3{
+        font-size: 12px;
+    }
+    .profile p{
+       font-size: 12px;
+    }
+    .sociamedia ul li{
+    
+        width: 90%;
+    }
+
+    .attribution a{
+       
+        
+        font-size: 16px;
+        font-weight: 600;
+        
+    }
+}
